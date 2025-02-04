@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to Hanibal Travel Agency</h1>
+            <nav>
+                <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#more">More</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="about">
+                <h2>About Us</h2>
+                <p>We are a travel agency dedicated to providing the best travel experiences.</p>
+            </section>
+            <section id="services">
+                <h2>Our Services</h2>
+                <ul>
+                    <li>Travel Packages</li>
+                    <li>Flight Booking</li>
+                    <li>Hotel Reservations</li>
+                </ul>
+                <section id="more">
+                    <h2>More About Destination & Luggage Weight</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Destination</th>
+                                <th>Max Luggage Weight</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>New York</td>
+                                <td>50kg</td>
+                                <td>Check airline policy</td>
+                            </tr>
+                            <tr>
+                                <td>Paris</td>
+                                <td>25kg</td>
+                                <td>Includes carry-on</td>
+                            </tr>
+                            <tr>
+                                <td>Asmara</td>
+                                <td>35kg</td>
+                                <td>Extra fees for over</td>
+                            </tr>
+                            <tr>
+                                <td>Sydney</td>
+                                <td>20kg</td>
+                                <td>Only one checked bag</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <form action="./submit" method="post">
+                        <label for="destination">Destination:</label>
+                        <input type="text" id="destination" name="destination" required><br><br>
+                        <label for="luggageWeight">Luggage Weight:</label>
+                        <input type="number" id="luggageWeight" name="luggageWeight" required><br><br>
+                        <label for="notes">Notes:</label>
+                        <textarea name="notes" id="notes"></textarea><br><br>
+                        <input type="submit" value="submit">
+                    </form>
+
+                </section>
+            </section>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>Email: info@hanibaltravelagency.com</p>
+                <p>Phone: 124-346-5789</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy;2025 Hanibal Travel Agency.All rights reserved.</p>
+        </footer>
+    </body>
+</html>
